@@ -21,6 +21,12 @@
 			padding-top: 4vw;
 			padding-bottom: 4vw;
 		}
+		.tabs .indicator {
+			background-color: #1a237e;
+		}
+		.tabs .tab a:focus, .tabs .tab a:focus.active {
+			background: transparent;
+		}
 		@media screen and (max-width: 670px){
 			header {
 				min-height: 500px;
@@ -82,13 +88,62 @@
 			</div>
 		</div>
 	</section>
-  <!-- parallax -->
 
-  <!-- services / tabs -->
+	<!-- parallax -->
+	<div class="parallax-container">
+		<div class="parallax">
+			<img src="img/street.jpg" alt="" class="responsive-img">
+		</div>
+	</div>
+	
+	<!-- services / tabs -->
+	<section class="container section" id="services"> 
+		<div class="row">
+			<div class="col s12 l4">
+				<h2 class="indigo-text text-darken-4">
+					What I do...
+				</h2>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex hic velit laboriosam dolorum.</p>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex hic velit laboriosam dolorum.</p>
+			</div>
+			<div class="col s12 l6 offset-l2">
+				<ul class="tabs">
+					<li class="tab col s6">
+						<a href="#photography" class="indigo-text text-darken-4">Photography</a>
+					</li>
+					<li class="tab col s6">
+						<a href="#editing" class="indigo-text text-darken-4">Editing</a>
+					</li>
+				</ul>
+				<div class="col s12" id="photography">
+					<p class="flow-text indigo-text text-darken-4">PHOTOGRAPHY</p>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex hic velit laboriosam dolorum.</p>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex hic velit laboriosam dolorum.</p>
+				</div>
+				<div class="col s12" id="editing">
+					<p class="flow-text indigo-text text-darken-4">EDITING</p>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex hic velit laboriosam dolorum.</p>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex hic velit laboriosam dolorum.</p>
+				</div>
+			</div>
+		</div>
+	</section>
 
-  <!-- parallax -->
+	<!-- parallax -->
+	<div class="parallax-container">
+		<div class="parallax">
+			<img src="img/stars.jpg" alt="" class="responsive-img">
+		</div>
+	</div>
 
-  <!-- contact form -->
+	<!-- contact form -->
+	<div class="container">
+		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex hic velit laboriosam dolorum.</p>
+		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex hic velit laboriosam dolorum.</p>
+		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex hic velit laboriosam dolorum.</p>
+		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex hic velit laboriosam dolorum.</p>
+		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex hic velit laboriosam dolorum.</p>
+	</div>
 
   <!-- footer -->
 
@@ -99,6 +154,8 @@
     $(document).ready(function(){
 			$('.sidenav').sidenav();
 			$('.materialboxed').materialbox();
+			$('.parallax').parallax();
+			$('.tabs').tabs();
     });
   </script>
 </body>
